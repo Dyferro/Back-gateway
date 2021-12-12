@@ -1,0 +1,50 @@
+###
+GET   http://localhost:3000/api/gateways
+
+###
+POST   http://localhost:3000/api/gateways
+Content-Type: application/json
+
+{
+    "serial_number": "SN998",
+    "hr_name":"Enlace",
+    "ip_address":"192.168.50.30",
+    "associated_peripheral":[{
+        "uid":15,
+        "vendor":"Lenovo",
+        "date_created":"12/10/2021",
+        "status":true
+    },
+    {
+        "uid":16,
+        "vendor":"Asus",
+        "date_created":"12/10/2021",
+        "status":true
+    },
+    {
+        "uid":17,
+        "vendor":"Kingstom",
+        "date_created":"10/03/2021",
+        "status":true
+    }]
+
+}
+
+###
+GET http://localhost:3000/api/gateways/61abc0c5e2de33dd872fdac5
+
+###
+PUT http://localhost:3000/api/gateways/61abc0c7e2de33dd872fdac7
+Content-Type: application/json
+
+{
+    "hr_name":"Puerta de Enlace"
+    
+
+}
+
+###
+DELETE  http://localhost:3000/api/gateways/61ac3137a88a0dff26939fe7
+
+
+

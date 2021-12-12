@@ -1,0 +1,24 @@
+{
+    "name": "back-gateway",
+    "version": "1.0.0",
+    "description": "REST service with nodejs, express and mongo db ",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js",
+        "dev": "nodemon server.js"
+    },
+    "author": "Doina Y. Ferro",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "mongodb": "^4.2.1",
+        "mongoose": "^6.0.14",
+        "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
+}
